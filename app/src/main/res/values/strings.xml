@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">StockQuotes-keane</string>
+    <string name="_52_week_range">52 Week Range:</string>
+    <string name="change">Change:</string>
+    <string name="enter_stock_symbol">Enter stock symbol:</string>
+    <string name="get_stock_quote">Get Stock Quote</string>
+    <string name="last_trade_price">Last Trade Price:</string>
+    <string name="last_trade_time">Last Trade Time:</string>
+    <string name="name">Name:</string>
+    <string name="symbol">Symbol:</string>
+    <string name="ex_goog">ex GOOG</string>
+    <string name="general_exception">Something went terribly wring</string>
+    <string name="io_exception">IO Exception</string>
+    <string name="malformed_exception">MalformedURL Exception</string>
+    <string name="invalid">Invalid input</string>
 </resources>

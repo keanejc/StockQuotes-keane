@@ -1,4 +1,4 @@
-package edu.cofc.stock;
+package com.introtoandriod.stockquotes_keane;
 
 import android.util.Log;
 import java.net.*;

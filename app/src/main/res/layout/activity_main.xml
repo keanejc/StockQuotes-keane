@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter stock symbol:  "
+        android:text="@string/enter_stock_symbol"
         android:textSize="10pt"
  />
 
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:hint="ex GOOG"
+        android:hint="@string/ex_goog"
         android:id="@+id/input"
 
         />
@@ -31,7 +31,7 @@
     <TableRow>
 
         <Button
-            android:text="Get Stock Quote"
+            android:text="@string/get_stock_quote"
             android:layout_span="2"
             android:id="@+id/button"
 
@@ -42,7 +42,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Symbol:  "
+            android:text="@string/symbol"
             android:textAlignment="viewEnd"
             />
 
@@ -59,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name:  "
+            android:text="@string/name"
             android:textAlignment="viewEnd"
             />
 
@@ -76,7 +76,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Last Trade Price:  "
+            android:text="@string/last_trade_price"
             android:textAlignment="viewEnd"
             />
 
@@ -93,7 +93,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Last Trade Time:  "
+            android:text="@string/last_trade_time"
             android:textAlignment="viewEnd"
             />
 
@@ -110,7 +110,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Change:  "
+            android:text="@string/change"
             android:textAlignment="viewEnd"
             />
 
@@ -127,7 +127,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="52 Week Range:  "
+            android:text="@string/_52_week_range"
             android:textAlignment="viewEnd"
             />
 
