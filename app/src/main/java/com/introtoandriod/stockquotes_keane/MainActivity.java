@@ -3,7 +3,6 @@ package com.introtoandriod.stockquotes_keane;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -40,8 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void getQuote() {
         CharSequence inputString = input.getText();
-        Stock stock = new Stock(inputString.toString().toUpperCase());
+
         if (checkInput(inputString)) {
+            Stock stock = new Stock(inputString.toString().toUpperCase());
             AsyncTaskRunner runner = new AsyncTaskRunner();
             runner.execute(stock);
         } else {
@@ -96,8 +96,9 @@ public class MainActivity extends AppCompatActivity {
     private class AsyncTaskRunner extends AsyncTask<Stock, Stock, Stock> {
         @Override
         protected Stock doInBackground(Stock... stock) {
+            Stock stock1 = stock[0];
             try{
-                stock.load();
+                stock1.load();
             }
             catch(MalformedURLException e){
                 Toast.makeText(getApplicationContext(), R.string.malformed_exception,Toast.LENGTH_SHORT).show();
@@ -115,14 +116,13 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-            return null;
+            return stock1;
         }
 
-
         @Override
-        protected void onPostExecute(Object o) {
-            super.onPostExecute(o);
-            update((Stock) o);
+        protected void onPostExecute(Stock result){
+            super.onPostExecute(result);
+            update(result);
         }
 
 
