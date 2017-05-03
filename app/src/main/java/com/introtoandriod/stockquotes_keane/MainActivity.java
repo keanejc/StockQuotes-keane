@@ -13,21 +13,31 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 
 public class MainActivity extends AppCompatActivity {
-    // Get element ids
-    Button button = (Button) findViewById(R.id.button);
-    EditText input = (EditText) findViewById(R.id.input);
-    TextView symbol = (TextView) findViewById(R.id.symbol);
-    TextView name = (TextView) findViewById(R.id.name);
-    TextView price = (TextView) findViewById(R.id.price);
-    TextView time = (TextView) findViewById(R.id.time);
-    TextView change = (TextView) findViewById(R.id.change);
-    TextView range = (TextView) findViewById(R.id.range);
+    Button button;
+    EditText input;
+    TextView symbol;
+    TextView name;
+    TextView price;
+    TextView time;
+    TextView change;
+    TextView range;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+// Get element ids
+        button = (Button) findViewById(R.id.button);
+        input = (EditText) findViewById(R.id.input);
+         symbol = (TextView) findViewById(R.id.symbol);
+         name = (TextView) findViewById(R.id.name);
+         price = (TextView) findViewById(R.id.price);
+         time = (TextView) findViewById(R.id.time);
+         change = (TextView) findViewById(R.id.change);
+         range = (TextView) findViewById(R.id.range);
 
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
